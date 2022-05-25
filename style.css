@@ -1,0 +1,245 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+}
+header{
+    background-color: #bbbbbb;
+    padding: 20px 0;
+}
+
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bolder;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    box-sizing:border-box;
+    padding: 30px 20px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+   
+}
+
+.productos li:hover{
+   border-color: #c78c19;
+}
+
+.productos li:hover h2{
+    font-size: 33px;
+  
+}
+
+.productos li:active{
+    border-color:  #088c18;
+}
+.productos h2{
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.pDescripcion{
+    font-size: 18px;
+}
+
+.pPrecio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+ }
+
+footer{
+    background: url(imagenes/bg.jpg);
+    text-align: center;
+    padding: 5%;
+    
+}
+
+.copyright{
+    color: #bbbbbb;
+    text-align:center;
+    font-size: 13px;
+    margin: 20px;
+}
+
+main{
+    
+}
+
+form{
+    margin: 40px 0;
+}
+
+form label,form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 40%;
+}
+
+.checkbox{
+    margin: 25px 0;
+}
+
+p{
+    color: rgb(174, 27, 27);
+}
+.enviar{
+    width: 45%;
+    padding: 15px 0 ;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: orange;
+    border: none;
+    border-radius: 15px;
+    transition: 2s background;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background: darkorange;
+    transform: scale(1.1);
+}
+
+table{
+    margin: 40px 40px;
+}
+
+thead{
+    background: black;
+    color: white;
+    font-weight: bold;
+}
+
+th,td{
+    border: 1px solid black; 
+    padding:  10px 15px;
+ }
+
+ /*CCS para pagina home*/
+ .banner{
+     width: 100%;
+ }
+ .titulo1{
+     padding: 3em;
+     background:#FEFEFE ;
+     width: 940px;
+     margin: 0 auto;
+ }
+.tituloPrincipal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+.titulo1 p{
+    margin: 0 0 1em;
+}
+.utensilios{
+    width: 10%;
+    float: left;
+    margin: 0 20px 20px;
+}
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient(#ffffff,#888888);
+}
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+.mapa-contenido{
+    width: 940px;
+    margin:0 auto;
+}
+.Diferenciales{
+    padding: 3em;
+    background: #888888;
+}
+.contenidoDiferenciales{
+    width: 640px;
+    margin: 0 auto;
+}
+.listaDiferenciales{
+    width: 30%;
+    display:inline-block;
+    vertical-align: top;
+}
+.item{
+    line-height: 1.5;
+}
+.item:first-child{
+    font-weight: bold;
+}
+.imagenDif{
+    width: 60%;
+    transition: 400ms;
+    box-shadow: 10px 10px 15px black;
+}
+.imagenDif:hover{
+   opacity: 85%;
+}
+.video{
+    width: 560px;
+    margin: 1em auto;
+}
+@media screen and (max-width:480px){
+
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .caja, .titulo1, .mapa-contenido, .contenidoDiferenciales, .video{
+        width: auto;
+    }
+    .imagenDif, .listaDiferenciales{
+        width: 100%;
+    }
+}
